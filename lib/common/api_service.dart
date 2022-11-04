@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '/model/user.dart';
 import 'package:test/common/exceptions.dart';
 
-const String url = 'http://jsonplaceholder.typicode.com/user';
+const String url = 'http://jsonplaceholder.typicode.com/users';
 Future<List<User>> fetchUsrInfo() async {
   try {
     final response = await http.get(Uri.parse(url));
